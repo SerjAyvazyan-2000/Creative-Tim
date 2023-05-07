@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Creative-Tim/static/css/main.aa41f66a.css",
+    "main.js": "/Creative-Tim/static/js/main.06197a7c.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Creative-Tim/static/js/787.28cb0dcd.chunk.js",
+    "static/media/icomoon.svg?on443j": "/Creative-Tim/static/media/icomoon.eeb70a748cc8857682e8.svg",
+    "static/media/icomoon.eot?on443j": "/Creative-Tim/static/media/icomoon.b441fcde9abd6caa97e5.eot",
+    "static/media/icomoon.woff?on443j": "/Creative-Tim/static/media/icomoon.8b21c0e6ac17d85999cd.woff",
+    "static/media/icomoon.ttf?on443j": "/Creative-Tim/static/media/icomoon.c5397c5ae620b74b21bb.ttf",
+    "static/media/logo.svg": "/Creative-Tim/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Creative-Tim/index.html",
+    "main.aa41f66a.css.map": "/Creative-Tim/static/css/main.aa41f66a.css.map",
+    "main.06197a7c.js.map": "/Creative-Tim/static/js/main.06197a7c.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Creative-Tim/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa41f66a.css",
+    "static/js/main.06197a7c.js"
+  ]
+}
