@@ -1,0 +1,24 @@
+@import "src/assets/style/variables";
+
+.typography-box{
+   background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.typography-box > :not(:last-child){
+  margin: 0 0 20px;
+}
+.typography-header{
+
+  p{
+     font-size: $fontSizeText;
+  }
+  span{
+     color: $textColor;
+  }
+}
+.typography-header > :not(:last-child){
+   margin: 0 0 5px;
+}
+

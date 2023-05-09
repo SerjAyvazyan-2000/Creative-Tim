@@ -1,0 +1,33 @@
+@import "src/assets/style/variables";
+.notification-box{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.notification-header{
+  p{
+    font-size: $fontSizeText;
+  }
+  span{
+    color: $textColor;
+  }
+}
+.notification-header > :not(:last-child){
+  margin: 0 0 5px;
+}
+.notification-body{
+   display: flex;
+  gap: 2%;
+}
+.notification-box > :not(:last-child){
+  margin: 0 0 20px;
+}
+.notification-style{
+   width: 49%;
+  border: 1px solid $textColor;
+}
+.notification-states{
+  width: 49%;
+  border: 1px solid $textColor;
+}

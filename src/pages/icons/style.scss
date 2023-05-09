@@ -1,0 +1,27 @@
+@import "src/assets/style/variables";
+.icons-box{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+//.typography-box > :not(:last-child){
+//  margin: 0 0 20px;
+//}
+.icons-header{
+  p{
+    font-size: $fontSizeText;
+  }
+  span{
+    color: $textColor;
+  }
+}
+.icons-header > :not(:last-child){
+  margin: 0 0 5px;
+}
+.icons-list{
+   display: flex;
+  flex-wrap: wrap;
+  gap: 1.2%;
+  margin-top: 20px;
+}

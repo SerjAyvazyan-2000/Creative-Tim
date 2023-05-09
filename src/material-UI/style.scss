@@ -1,0 +1,25 @@
+@import "src/assets/style/variables";
+
+.table-title {
+  padding: 10px;
+
+  p {
+    font-weight: 600;
+    font-size: $fontSizeText;
+  }
+
+  span{
+    color: $textColor;
+
+  }
+}
+
+.table-title > :not(:last-child) {
+  margin: 0 0 5px;
+}
+
+
+
+.table-row:nth-child(even) {
+  background: $containerBg;
+}

@@ -1,0 +1,180 @@
+@import "src/assets/style/variables";
+
+.edit-users-section {
+  display: flex;
+  gap: 2%;
+  padding: 20px;
+}
+
+.edit-profile {
+  width: 69%;
+}
+
+.edit-users-form > :not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.profile-title {
+
+  p {
+    font-weight: 500;
+    font-size: $fontSizeText;
+  }
+}
+
+.edit-profile > :not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.edit-users-form {
+  label {
+    p {
+      margin: 0 0 5px;
+      color: $textColor;
+
+    }
+  }
+}
+
+.edit-input-box-company {
+  display: flex;
+  gap: 1.2%;
+
+  .company-tools {
+    width: 33%;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.edit-box-firstName-lastName {
+  display: flex;
+  gap: 2%;
+}
+
+.firstname-tools {
+  width: 49%;
+
+  input {
+    width: 100%;
+  }
+}
+
+.address-tools {
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+}
+
+.edit-city-country {
+  display: flex;
+  gap: 1.2%;
+
+  .city-country-tools {
+    width: 33%;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.about-tools {
+  width: 100%;
+
+  p {
+    margin: 0 0 5px;
+    color: $textColor;
+
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid $textColor;
+
+
+  }
+}
+
+.update-users {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.users-information {
+  width: 29%;
+  border: 1px solid red;
+  border-radius: 10px;
+
+}
+
+.card-user {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card-image {
+  height: 30%;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.card-author {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+
+  img {
+    border-radius: 50%;
+  }
+
+  h3 {
+    color: $textHoverBlue;
+  }
+}
+
+.author-description > :not(:last-child) {
+  margin: 0 0 15px;
+}
+
+.author-description {
+  margin-top: 30%;
+  text-align: center;
+
+
+}
+
+.author-contact {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid $textColor;
+
+  span {
+    margin: 10px;
+    color: $textColor;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      color: $textHoverColor;
+
+    }
+  }
+
+}

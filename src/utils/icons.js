@@ -1,0 +1,26 @@
+
+export const  iconsList = [
+    {name:'icon-map-signs',id:1},
+    {name:'icon-facebook',id:2},
+    {name:'icon-home',id:3},
+    {name:'icon-pencil',id:4},
+    {name:'icon-pencil2',id:5},
+    {name:'icon-eyedropper',id:6},
+    {name:'icon-droplet',id:7},
+    {name:'icon-connection',id:8},
+    {name:'icon-film',id:9},
+    {name:'icon-feed',id:10},
+    {name:'icon-library',id:11},
+    {name:'icon-map-signs',id:1},
+    {name:'icon-facebook',id:2},
+    {name:'icon-home',id:3},
+    {name:'icon-pencil',id:4},
+    {name:'icon-pencil2',id:5},
+    {name:'icon-eyedropper',id:6},
+    {name:'icon-droplet',id:7},
+    {name:'icon-connection',id:8},
+    {name:'icon-film',id:9},
+    {name:'icon-feed',id:10},
+    {name:'icon-library',id:11},
+
+]

@@ -1,0 +1,44 @@
+@import "src/assets/style/variables";
+
+.footer-block {
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+
+      a {
+        margin: 0 20px 0 0;
+        color: $textColor;
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover {
+          color: $textHoverColor;
+        }
+      }
+    }
+  }
+}
+
+.footer-info {
+  p {
+    color: $textColor;
+
+    a{
+      cursor: pointer;
+      color: $textHoverBlue;
+      transition: .3s;
+     &:hover{
+        color: aqua;
+     }
+    }
+
+  }
+}

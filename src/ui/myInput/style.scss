@@ -1,0 +1,16 @@
+@import "src/assets/style/variables";
+
+.my-input{
+   padding: 10px;
+  transition: .3s;
+  border: 1px solid $textColor;
+
+
+
+  &:focus{
+     border: 1px solid #424242;
+  }
+}
+.error-text{
+  color: red;
+}

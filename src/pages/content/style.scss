@@ -1,0 +1,22 @@
+@import "src/assets/style/variables";
+
+
+.content-section{
+   position: relative;
+
+  width: calc(100% - 280px);
+  left: 280px;
+  background: #736e6e;
+  height: 100vh;
+  overflow: auto;
+  transition: .3s;
+
+  &.active{
+    left: 0;
+    width: 100%;
+  }
+}
+
+.router-pages-box{
+   margin: 10px;
+}

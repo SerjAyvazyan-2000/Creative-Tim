@@ -1,0 +1,14 @@
+@import "src/assets/style/variables";
+
+.my-button{
+   padding: 10px 20px;
+  background-color: $textHoverBlue;
+  border-radius: 10px;
+  color: $white;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover{
+     background-color: #19acd0;
+  }
+}

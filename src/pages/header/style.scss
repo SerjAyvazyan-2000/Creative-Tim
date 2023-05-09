@@ -1,0 +1,152 @@
+@import "src/assets/style/variables";
+
+
+.main-header{
+  background: white;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+}
+.main-header-title{
+  display: flex;
+  align-items: center;
+  font-size: $fontSizeText;
+  color: $textColor;
+
+  @media screen  and (max-width: 991px){
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+}
+.header-title-text{
+  p {
+    color: $textColor;
+    transition: $transition;
+
+    &:hover {
+      color: $textHoverColor;
+      cursor: pointer;
+    }
+  }
+
+  @media screen  and (max-width: 991px){
+    margin: 0;
+
+  }
+}
+.title-icons-list{
+  display: flex;
+  align-items: center;
+
+  i{
+    color: $textColor;
+    font-size: $fontSizeSidebarIcons;
+    transition: $transition;
+    &:hover{
+      color: $textHoverBlue;
+      cursor: pointer;
+    }
+  }
+  p{
+    color: $textColor;
+    transition: $transition;
+
+    &:hover{
+      color: $textHoverColor;
+      cursor: pointer;
+    }
+
+  }
+  @media screen  and (max-width: 991px){
+    display: none;
+
+  }
+}
+.header-notification-list{
+  font-size: $fontSizeSidebarIcons;
+  color: $textColor;
+  transition: $transition;
+  position: relative;
+
+
+  &:hover{
+    color: $textHoverBlue;
+    cursor: pointer;
+  }
+  span{
+    position: absolute;
+    bottom: 0;
+
+    font-size: 13px;
+  }
+}
+.header-search-box{
+  @media screen  and (max-width: 991px){
+    display: none;
+
+  }
+}
+.main-header-title :not(:last-child){
+  margin:  0  30px 0 0;
+}
+.burger-menu{
+  cursor: pointer;
+  display: none;
+
+  .burger-item{
+    background-color:$textColor;
+    width: 30px;
+    height: 3px;
+    margin: 0 0  5px;
+  }
+  @media screen  and (max-width: 991px){
+    display: block;
+
+  }
+
+}
+.main-header-navigation{
+  @media screen  and (max-width: 1258px){
+    display: none;
+
+  }
+}
+
+
+.account-loagOut{
+  ul{
+    display: flex;
+    align-items: center;
+    li{
+      margin: 0 30px ;
+
+      a{
+        font-size: $fontSizeText;
+        color: $textColor;
+        transition: $transition;
+        display: flex;
+        align-items: center;
+
+        &:hover{
+          color: $textHoverBlue;
+
+        }
+        span{
+          margin: 0 5px;
+        }
+      }
+
+    }
+  }
+
+
+}
