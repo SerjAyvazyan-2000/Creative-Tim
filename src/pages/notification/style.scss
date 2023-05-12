@@ -8,6 +8,7 @@
 .notification-header{
   p{
     font-size: $fontSizeText;
+
   }
   span{
     color: $textColor;
@@ -19,15 +20,55 @@
 .notification-body{
    display: flex;
   gap: 2%;
+
+  p{
+     color: $textColor;
+  }
 }
 .notification-box > :not(:last-child){
   margin: 0 0 20px;
 }
 .notification-style{
    width: 49%;
-  border: 1px solid $textColor;
+}
+.notification-style > :not(:last-child){
+   margin: 0 0 20px;
 }
 .notification-states{
   width: 49%;
-  border: 1px solid $textColor;
+}
+.notification-states > :not(:last-child){
+  margin: 0 0 20px;
+}
+.places-buttons{
+   width: 70%;
+  margin: 0 auto;
+}
+.card-title{
+   p{
+      font-size: $fontSizeText;
+   }
+  span{
+     color: $textColor;
+    font-size: 13px;
+  }
+}
+.buttons-box{
+  margin-top: 10px;
+   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.notification-modal{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+     font-size: $fontSizeText;
+    font-weight: bold;
+
+  }
+}
+.notification-modal > :not(:last-child){
+   margin: 0 0 10px;
 }

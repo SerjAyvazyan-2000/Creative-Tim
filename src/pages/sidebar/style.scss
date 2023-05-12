@@ -18,12 +18,15 @@
 .sidebar-image,{
    width: 100%;
   height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .sidebar-bg{
   width: 100%;
   height: 100%;
   background: $sidebarBg;
- opacity: .8;
+ opacity: .9;
 }
 
 .brand-name {
@@ -43,51 +46,3 @@
 
   }
 }
-
-//.sidebar-menu {
-//  width: 80%;
-//  //width: 100%;
-//  padding: 15px 0 0 0;
-//  margin: 0 auto;
-//  display: flex;
-//  flex-direction: column;
-//
-//
-//  li {
-//    padding: 15px 0;
-//    border-radius: 10px;
-//    cursor: pointer;
-//    transition: .3s;
-//
-//
-//    &:hover {
-//      background: $white1;
-//    }
-//
-//    &:nth-child(9) {
-//      position: absolute;
-//      bottom: 10px;
-//      margin-top: 10px;
-//      background: $white1;
-//
-//    }
-//  }
-//
-//  a {
-//    color: white;
-//    padding: 0 15px;
-//    white-space: nowrap;
-//
-//
-//    span {
-//      margin: 0 5px;
-//      white-space: nowrap;
-//
-//    }
-//
-//    i {
-//      font-size: $fontSizeSidebarIcons;
-//    }
-//  }
-//}
-//

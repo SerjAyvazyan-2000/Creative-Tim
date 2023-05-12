@@ -1,0 +1,16 @@
+@import "src/assets/style/variables";
+.button-item{
+   padding: 10px 40px;
+  border: 1px solid $textColor;
+  color: $textColor;
+  background: none;
+  cursor: pointer;
+  transition: $transition;
+  margin: 0 0 10px;
+  &:hover{
+    color: black;
+
+    border: 1px solid black;
+
+  }
+}

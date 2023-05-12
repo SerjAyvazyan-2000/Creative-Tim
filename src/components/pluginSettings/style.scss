@@ -1,0 +1,17 @@
+@import "src/assets/style/variables";
+.fixed-plugin {
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 110px;
+  background: black;
+  padding: 10px 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+
+  i{
+    color: white;
+    font-size: $fontSizeText;
+  }
+}

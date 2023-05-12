@@ -1,11 +1,29 @@
 @import "src/assets/style/variables";
-.users-item{
-   width: 19%;
+
+.users-item {
+  width: 19%;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 150px;
-  margin: 0  0 1.2%;
+  margin: 0 0 1.2%;
   border: 1px solid $textColor;
+}
+
+.delete-tools {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  i {
+    cursor: pointer;
+    color: #d95f5f;
+    transition: .3s;
+
+    &:hover {
+      color: red;
+    }
+  }
 }

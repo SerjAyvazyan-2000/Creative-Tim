@@ -15,6 +15,11 @@ const Users = () => {
         fetching()
     }, [])
 
+    const removeUser = (id) => {
+        let newList = userList.filter(item => item.id !== id)
+        setUsersList(newList)
+    }
+
 
     return <div className="users-section">
         <div className="users-box">
@@ -26,18 +31,24 @@ const Users = () => {
             <div className="users-list">
                 {loading ?
                     <>
-                    {userList.map(user =>(
-                         <UsersItem
-                             key={user.id}
-                             name={user.name}
-                             id={user.id}
-                             userName={user.username}
-                             email={user.email}
-                         />
-                    ))}
+                        {userList.length ?
+                            <>
+                                {userList.map(user => (
+                                    <UsersItem
+                                        key={user.id}
+                                        name={user.name}
+                                        id={user.id}
+                                        userName={user.username}
+                                        email={user.email}
+                                        removeUser={removeUser}
+                                    />
+                                ))}
+
+                            </>
+                            : <p style={{color:"red"}}>EMPTY LIST</p>}
                     </>
 
-                    : <p style={{color:'red'}}>Loading...</p>}
+                    : <p style={{color: 'red'}}>Loading...</p>}
             </div>
 
         </div>

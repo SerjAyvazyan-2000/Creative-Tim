@@ -1,7 +1,6 @@
 import React from 'react';
 import "./style.scss"
 const MyInput = ({type,icon,name,placeholder,text,errorText}) => {
-    console.log(type)
     return <label>
         <p>{text}</p>
         <input name={name} className="my-input" type={type} placeholder={placeholder}/>
