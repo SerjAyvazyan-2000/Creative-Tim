@@ -3,6 +3,7 @@ import {useState} from "react";
 export const useFilterList = (notifications) => {
     const [notificationStyle, serNotificationStyle] = useState([])
     const [notificationState, serNotificationState] = useState([])
+
     const filterNotification = () => {
         let styleList = notifications.filter(item => item.category === "style")
         let stateList = notifications.filter(item => item.category === "state")

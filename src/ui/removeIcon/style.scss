@@ -1,0 +1,16 @@
+@import "src/assets/style/variables";
+.remove-icon{
+    background: white;
+    color: gray;
+    font-size: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      background: $textColor;
+
+    }
+
+}

@@ -4,10 +4,19 @@
   display: flex;
   gap: 2%;
   padding: 20px;
+
+  @media screen  and (max-width: 1030px){
+     flex-direction: column;
+  }
 }
 
 .edit-profile {
   width: 69%;
+  min-height: 500px;
+
+  @media screen  and (max-width: 1030px){
+    width: 100%;
+  }
 }
 
 .edit-users-form > :not(:last-child) {
@@ -29,7 +38,7 @@
 .edit-users-form {
   label {
     p {
-      margin: 0 0 5px;
+      margin: 10px 0 10px;
       color: $textColor;
 
     }
@@ -46,18 +55,33 @@
     input {
       width: 100%;
     }
+    @media screen  and (max-width: 1030px){
+      width: 100%;
+    }
+
   }
+  @media screen  and (max-width: 1030px){
+    flex-direction: column;
+  }
+
 }
 
 .edit-box-firstName-lastName {
   display: flex;
   gap: 2%;
+
+  @media screen  and (max-width: 1030px){
+    flex-direction: column;
+  }
 }
 
 .firstname-tools {
   width: 49%;
 
   input {
+    width: 100%;
+  }
+  @media screen  and (max-width: 1030px){
     width: 100%;
   }
 }
@@ -80,6 +104,12 @@
     input {
       width: 100%;
     }
+    @media screen  and (max-width: 1030px){
+      width: 100%;
+    }
+  }
+  @media screen  and (max-width: 1030px){
+    flex-direction: column;
   }
 }
 
@@ -104,12 +134,22 @@
 .update-users {
   display: flex;
   justify-content: flex-end;
+
+  @media screen  and (max-width: 1030px){
+   padding: 0 0 10px;
+  }
 }
 
 .users-information {
   width: 29%;
   border: 1px solid red;
   border-radius: 10px;
+  min-height: 400px;
+
+  @media screen  and (max-width: 1030px){
+    width: 100%;
+  }
+
 
 }
 
@@ -120,7 +160,7 @@
 }
 
 .card-image {
-  height: 30%;
+  height: 200px;
 }
 
 .card-body {
@@ -134,7 +174,10 @@
 .card-author {
   position: absolute;
   top: 20%;
-  left: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   img {
     border-radius: 50%;
@@ -143,17 +186,18 @@
   h3 {
     color: $textHoverBlue;
   }
+  p{
+    text-align: center;
+    max-width: 200px;
+
+    @media screen  and (max-width: 1030px){
+      max-width: 500px;
+    }
+
+  }
 }
-
-.author-description > :not(:last-child) {
-  margin: 0 0 15px;
-}
-
-.author-description {
-  margin-top: 30%;
-  text-align: center;
-
-
+.card-author > :not(:last-child){
+   margin: 0 0 20px;
 }
 
 .author-contact {

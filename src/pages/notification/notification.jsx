@@ -6,13 +6,14 @@ import ButtonsItem from "../../components/buttonsItem/buttonsItem";
 import ButtonModal from "../../ui/buttonModal/buttonModal";
 import {useFilterList} from "../../hooks/useFilterList";
 import MyButton from "../../ui/myButton/myButton";
-import {useOpenModal} from "../../hooks/useOpenModal";
 import MyModal from "../../ui/myModal/myModal";
+import {useRandomRgb} from "../../hooks/useRandomRgb";
 
 const Notification = () => {
-    const [iconsList, navBarState, notifications, routes, placesButtons] = useInformation()
+    const { notifications, placesButtons} = useInformation()
+    const {randomRGB} = useRandomRgb()
     const [filterNotification, notificationStyle, notificationState, remove] = useFilterList(notifications)
-    const [buttonList, setButtonInfo] = useState([])
+    const [modalInfo, setModalInfo] = useState([])
     const [buttonDirection, setButtonDirection] = useState('')
     const [openModal, setOpenModal] = useState(false)
 
@@ -21,18 +22,25 @@ const Notification = () => {
     useEffect(() => {
         filterNotification()
     }, [])
+
+
     const openPlacesButton = (id) => {
         let objButton = {
             title: 'Welcome to Light Bootstrap Dashboard - a beautiful freebie',
             description: 'for every web developer',
             icon: 'icon-coin-dollar',
-            color: '',
+            remove:"icon-cross",
+            color: randomRGB(),
             id: Date.now()
         }
-        setButtonInfo([...buttonList, objButton])
+        setModalInfo([...modalInfo, objButton])
     }
     const handleClick = () => {
         setOpenModal(!openModal)
+    }
+    const removeModalInfo = (id) =>{
+        let newInfo = modalInfo.filter(item => item.id !== id)
+        setModalInfo(newInfo)
     }
 
 
@@ -84,10 +92,11 @@ const Notification = () => {
             </div>
 
         </div>
-        {buttonList.length ?
+        {modalInfo.length ?
             <ButtonModal
-                buttonList={buttonList}
+                modalInfo={modalInfo}
                 buttonDirection={buttonDirection}
+                removeModalInfo={removeModalInfo}
             />
             : null}
         {openModal ? <MyModal

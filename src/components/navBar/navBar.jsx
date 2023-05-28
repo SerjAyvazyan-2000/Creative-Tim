@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
 import "./style.scss"
+import {useSelector} from "react-redux";
 
 const NavBar = ({navBarState}) => {
     const [subMenuActive,setSubMenuActive] = useState(false)

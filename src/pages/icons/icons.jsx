@@ -4,7 +4,7 @@ import IconsItem from "../../components/iconsItem/iconsItem";
 import {useInformation} from "../../hooks/useInformation";
 
 const Icons = () => {
-    const [iconsList] = useInformation()
+    const {iconsList} = useInformation()
     return<div className="icons-section">
         <div className="icons-box">
             <div className="icons-header">

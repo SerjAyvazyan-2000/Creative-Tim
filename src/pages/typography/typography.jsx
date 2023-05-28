@@ -1,10 +1,10 @@
 import React from 'react';
 import "./style.scss"
 import TypographyLine from "../../components/typographyLine/typographyLine";
-import {useTypography} from "../../hooks/typography";
+import {useInformation} from "../../hooks/useInformation";
 
 const Typography = () => {
-  const {typographyList} = useTypography()
+    const {typographyList} = useInformation()
 
 
     return <div className="typography-section">
@@ -26,7 +26,6 @@ const Typography = () => {
                         color={item.color}
                     />
                 ))}
-
 
             </div>
         </div>

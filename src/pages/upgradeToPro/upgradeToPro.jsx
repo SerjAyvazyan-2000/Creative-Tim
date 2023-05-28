@@ -3,7 +3,7 @@ import React from 'react';
 const UpgradeToPro = () => {
     return (
         <div>
-            hello UpgradeToPro
+             UpgradeToPro
         </div>
     );
 };

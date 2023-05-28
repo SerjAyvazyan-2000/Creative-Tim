@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import "./style.scss"
 import MyInput from "../../ui/myInput/myInput";
 import MyButton from "../../ui/myButton/myButton";
@@ -8,6 +8,7 @@ import {NavLink} from "react-router-dom";
 
 
 const EditUsers = () => {
+    const ref = useRef('zxcasas')
 
     const [users,setUsers] = useState({
         id:1,
@@ -16,6 +17,10 @@ const EditUsers = () => {
         userName:'michael24',
         description:'"Lamborghini Mercy Your chick she so thirsty I\'m in that two seat Lambo"'
     })
+    const handleClick = (e) => {
+         e.preventDefault()
+        console.log(ref.current)
+    }
 
     return <div className="edit-users-section">
         <div className="edit-profile">
@@ -101,8 +106,9 @@ const EditUsers = () => {
                         <textarea placeholder="Here can be your description"></textarea>
                     </div>
                 </div>
-                <div className="update-users">
-                    <MyButton text="Update Profile"/>
+                <div  className="update-users">
+
+                    <MyButton onClick={(e)=>handleClick(e)} ref={ref} text="Update Profile"/>
                 </div>
             </form>
 
@@ -117,11 +123,9 @@ const EditUsers = () => {
                     <NavLink className="card-author">
                         <img src={users.img} alt=""/>
                         <h3>{users.name}</h3>
-                    </NavLink>
-                    <div className="author-description">
                         <p>{users.userName}</p>
                         <p>{users.description}</p>
-                    </div>
+                    </NavLink>
                     <div className="author-contact">
                         <span className="icon-facebook"></span>
                         <span className="icon-twitter"></span>

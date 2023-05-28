@@ -1,11 +1,15 @@
 import React from 'react';
 import "./style.scss"
-const ButtonModal = ({buttonList,buttonDirection}) => {
+import RemoveIcon from "../removeIcon/removeIcon";
 
-    return <div className={buttonDirection ?  buttonDirection : "buttons-modal"}>
-        {buttonList.length ? buttonList.map((item, index) => {
-            return <div key={item.id}   className="button-info">
+const ButtonModal = ({modalInfo, buttonDirection,removeModalInfo}) => {
+
+    return <div className={buttonDirection ? buttonDirection : "buttons-modal"}>
+        {modalInfo.length ? modalInfo.map((item, index) => {
+            return <div style={{backgroundColor: `${item.color}`}} key={item.id} className="button-info">
+                <span className="icon-checkmark"></span>
                 <p>{item.title}</p>
+                <RemoveIcon icon={"icon-cross"} onClick={()=>removeModalInfo(item.id)}/>
             </div>
         }) : null}
 

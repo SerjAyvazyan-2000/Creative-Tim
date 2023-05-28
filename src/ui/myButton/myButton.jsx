@@ -1,10 +1,10 @@
 import React from 'react';
 import "./style.scss"
 
-const MyButton = ({text,onClick}) => {
-    return <button onClick={onClick} className="my-button" >
-        {text}
-    </button>
-};
 
+const MyButton = React.forwardRef((props,ref)=>(
+     <button ref={ref}  onClick={props.onClick} className="my-button" >
+        {props.text}
+    </button>
+))
 export default MyButton;

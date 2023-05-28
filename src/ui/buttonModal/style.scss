@@ -1,4 +1,4 @@
-
+@import "src/assets/style/variables";
 .buttons-modal{
    position: fixed;
   left: 0;
@@ -62,9 +62,26 @@
   width: 100%;
   height: 100%;
   transition: .3s;
-  background: red;
   margin-top: 20px;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    background: white;
+    color: gray;
+    font-size: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      background: $textColor;
+
+    }
+  }
 
 
 
