@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/Creative-Tim/static/css/main.f63bf4c8.css",
-    "main.js": "/Creative-Tim/static/js/main.95531b2b.js",
+    "main.css": "/Creative-Tim/static/css/main.203ba7c1.css",
+    "main.js": "/Creative-Tim/static/js/main.397ab765.js",
     "static/js/787.28cb0dcd.chunk.js": "/Creative-Tim/static/js/787.28cb0dcd.chunk.js",
+    "static/media/sidebar-1.jpg": "/Creative-Tim/static/media/sidebar-1.2ea74e53b4baa6bbae05.jpg",
+    "static/media/sidebar-4.jpg": "/Creative-Tim/static/media/sidebar-4.6a6aca60f8faf113e576.jpg",
+    "static/media/sidebar-3.jpg": "/Creative-Tim/static/media/sidebar-3.c6513eec6151dfe0cc82.jpg",
     "static/media/sidebar-5.jpg": "/Creative-Tim/static/media/sidebar-5.9aca257bcadedf58aeff.jpg",
     "static/media/photo-1431578500526-4d9613015464.jpg": "/Creative-Tim/static/media/photo-1431578500526-4d9613015464.b52e3a7775124ea05772.jpg",
     "static/media/icomoon.svg?on443j": "/Creative-Tim/static/media/icomoon.eeb70a748cc8857682e8.svg",
@@ -11,12 +14,12 @@
     "static/media/icomoon.woff?on443j": "/Creative-Tim/static/media/icomoon.8b21c0e6ac17d85999cd.woff",
     "static/media/icomoon.ttf?on443j": "/Creative-Tim/static/media/icomoon.c5397c5ae620b74b21bb.ttf",
     "index.html": "/Creative-Tim/index.html",
-    "main.f63bf4c8.css.map": "/Creative-Tim/static/css/main.f63bf4c8.css.map",
-    "main.95531b2b.js.map": "/Creative-Tim/static/js/main.95531b2b.js.map",
+    "main.203ba7c1.css.map": "/Creative-Tim/static/css/main.203ba7c1.css.map",
+    "main.397ab765.js.map": "/Creative-Tim/static/js/main.397ab765.js.map",
     "787.28cb0dcd.chunk.js.map": "/Creative-Tim/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f63bf4c8.css",
-    "static/js/main.95531b2b.js"
+    "static/css/main.203ba7c1.css",
+    "static/js/main.397ab765.js"
   ]
 }
